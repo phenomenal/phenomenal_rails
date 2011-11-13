@@ -18,7 +18,7 @@ module PhenomenalRails
     end
   end
   ActionDispatch::Callbacks.before do
-    pnml_defined_contexts.each do |context|
+    pnml_defined_contexts.reverse.each do |context| # TODO reverse because default has to be last forgeted
       if !context.persistent || !Rails.configuration.cache_classes
         while pnml_context_active?(context) do
           pnml_deactivate_context(context) 
@@ -30,10 +30,8 @@ module PhenomenalRails
       end
       
     end
-    
     if !Rails.configuration.cache_classes
       PhenomenalRails.load_dir("#{Rails.root}/app/contexts")
     end
-    puts "***$**$***"
   end
 end

@@ -3,5 +3,6 @@ class ApplicationController < ActionController::Base
   include ApplicationHelper
   
   def home
+    render "pages/home"
   end
 end
