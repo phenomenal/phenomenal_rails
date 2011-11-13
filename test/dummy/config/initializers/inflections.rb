@@ -8,4 +8,4 @@
 #   inflect.irregular 'person', 'people'
 #   inflect.uncountable %w( fish sheep )
 # end
-PhenomenalInitializer.init
+
