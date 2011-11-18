@@ -1,5 +1,4 @@
-class Test::Firefox
-  act_as_context
+context :Firefox do
   
   adaptations_for ApplicationHelper
   

@@ -1,15 +1,12 @@
-class Test::Test
-  act_as_context :persistent
+feature :Test do
   
   adaptations_for PhenomenalRails::Middleware
   
   adapt :activation_handler do |env|
-    user_agent = env["HTTP_USER_AGENT"]
-    if user_agent[/(Firefox)/]
-      pnml_activate_context("Test::Firefox") 
-    end
-    pnml_proceed(env)
+    pnml_activate_context(:Firefox) 
   end
   
-  pnml_activate_context(self.name)
+  puts "-------------------------------------=^_^=---------------------------"
+  pnml_activate_context(:Test)
+  
 end

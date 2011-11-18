@@ -1,6 +1,7 @@
 require "phenomenal"
 require "phenomenal-rails/middleware"
 require "phenomenal-rails/engine"
+require "phenomenal-rails/context_definition"
 
 module PhenomenalRails
   def self.load_dir(path)
@@ -9,7 +10,7 @@ module PhenomenalRails
         if entry!="." && entry !=".."
           filepath=File.join(path,entry)
           if File.file?(filepath)
-            load filepath
+            PhenomenalRails::ContextDefinition.class_eval { eval File.open(filepath).read}
           else
             load_dir(filepath)
           end
