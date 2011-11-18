@@ -5,8 +5,7 @@ module PhenomenalRails
     end
     
     def call(env)
-      puts pnml_defined_contexts.first.informations
-     PhenomenalRails::Middleware.activation_handler(env)
+      PhenomenalRails::Middleware.activation_handler(env)
       @app.call(env)
     end
     
