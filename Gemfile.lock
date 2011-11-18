@@ -7,7 +7,7 @@ GIT
 PATH
   remote: .
   specs:
-    phenomenal-rails (0.0.2)
+    phenomenal-rails (0.0.3)
       phenomenal
       rails (~> 3.1.1)
 
