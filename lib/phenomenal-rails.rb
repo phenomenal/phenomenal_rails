@@ -18,14 +18,14 @@ module PhenomenalRails
     end
   end
   ActionDispatch::Callbacks.before do
-    pnml_defined_contexts.reverse.each do |context| # TODO reverse because default has to be last forgeted
+    phen_defined_contexts.reverse.each do |context| # TODO reverse because default has to be last forgeted
       if !context.persistent || !Rails.configuration.cache_classes
-        while pnml_context_active?(context) do
-          pnml_deactivate_context(context) 
+        while phen_context_active?(context) do
+          phen_deactivate_context(context) 
         end
         # Fix problem without page caching
         if !Rails.configuration.cache_classes
-          pnml_forget_context(context)
+          phen_forget_context(context)
         end
       end
       
