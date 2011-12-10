@@ -1,4 +1,5 @@
 feature :Test do
+  is_persistent
   
   adaptations_for PhenomenalRails::Middleware
   
@@ -7,5 +8,4 @@ feature :Test do
   end
   
   phen_activate_context(:Test)
-  
 end

@@ -1,6 +1,10 @@
 require "phenomenal"
+require "phenomenal-rails/context"
 require "phenomenal-rails/middleware"
 require "phenomenal-rails/engine"
+
+# Set default context as persistent
+phen_default_context.persistent=true
 
 module PhenomenalRails
   def self.load_dir(path)

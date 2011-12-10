@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email = "thibault.poncelet@student.uclouvain.be - loic.vigneron@student.uclouvain.be"
   s.homepage    = "http://www.phenomenal-gem.com"
   s.summary     = "Rails glue for phenomenal"
-  s.description = "DESCRIPTION T O D O"
+  s.description = "Rails integration of phenomenal"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
