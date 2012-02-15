@@ -5,5 +5,6 @@ class Phenomenal::Context
   #DSL inside context definition
   def is_persistent
     @persistent  = true
+    activate
   end
 end
