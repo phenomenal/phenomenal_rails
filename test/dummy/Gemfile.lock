@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: git@github.com:phenomenal/rails.git
-  revision: 10bea2e3e8771fac588294fff54277f7505d1d74
+  revision: 5e7d13446d238e7ada18c6b81f3717e7ee45c0dc
   specs:
     actionmailer (4.0.0.beta)
       actionpack (= 4.0.0.beta)
@@ -63,9 +63,6 @@ GEM
     hike (1.2.1)
     i18n (0.6.0)
     journey (1.0.1)
-    jquery-rails (2.0.0)
-      railties (< 5.0, >= 3.2.0.beta)
-      thor (~> 0.14)
     json (1.6.5)
     mail (2.4.1)
       i18n (>= 0.4.0)
@@ -73,7 +70,6 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.17.2)
     multi_json (1.0.4)
-    mysql2 (0.3.11)
     nokogiri (1.5.0)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -122,8 +118,6 @@ PLATFORMS
 DEPENDENCIES
   annotate-models
   haml
-  jquery-rails
-  mysql2
   phenomenal!
   rails!
   rspec-rails
