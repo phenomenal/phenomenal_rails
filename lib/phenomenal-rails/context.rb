@@ -7,4 +7,16 @@ class Phenomenal::Context
     @persistent  = true
     activate
   end
+  
+  def to_path
+    if name
+      name.to_s.underscore
+    elsif self==manager.default_context
+      nil
+    elsif manager.combined_contexts[self]
+       manager.combined_contexts[self].flatten.join("/").underscore
+    else
+      nil
+    end
+  end
 end

@@ -1,6 +1,5 @@
 source 'http://rubygems.org'
 
-gem 'rails', :git => "git@github.com:phenomenal/rails.git"
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -20,7 +19,7 @@ gem 'phenomenal', :git => "git@git.phenomenal-gem.com:phenomenal.git"
 #  gem "therubyracer", :require => 'v8'
 #end
 
-#gem 'jquery-rails'
+gem 'jquery-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'
