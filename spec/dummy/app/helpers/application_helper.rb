@@ -1,5 +1,5 @@
 module ApplicationHelper
   def test
-    "not adapted"
+    "not adapted helper"
   end
 end

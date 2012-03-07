@@ -1,0 +1,26 @@
+%h1 HOME
+%p
+  =test
+%p
+  =link_to "Activate", "#{root_path}?activated=true"
+  %br
+  =link_to "Deactivate", "#{root_path}"
+
+%table
+  %thead
+    %th Context
+    %th Active
+  %tbody
+    -phen_defined_contexts.each do |context|
+      %tr
+        %td=context.to_s
+        %td=context.active?
+
+%br
+=render "shared/partial1"
+%br
+
+= ActionController::Base.view_paths.paths
+%br
+%br
+=Rails.env
