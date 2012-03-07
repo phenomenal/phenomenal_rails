@@ -2182,3 +2182,33 @@ Processing by ApplicationController#home as HTML
   Rendered shared/_partial1.html.haml (0.1ms)
   Rendered pages/home.html.haml within layouts/application (2.1ms)
 Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-07 23:17:10 +0100
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.9ms)
+  Rendered pages/home.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-03-07 23:17:12 +0100
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app/contexts/persistent_feature/test_context/views/shared/_partial1.html.haml (0.8ms)
+  Rendered pages/home.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-07 23:17:14 +0100
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.1ms)
+  Rendered pages/home.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-03-07 23:17:14 +0100
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app/contexts/persistent_feature/test_context/views/shared/_partial1.html.haml (0.8ms)
+  Rendered pages/home.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
