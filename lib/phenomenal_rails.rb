@@ -1,5 +1,6 @@
 require "phenomenal"
 require "phenomenal_rails/context"
+require "phenomenal_rails/feature"
 require "phenomenal_rails/middleware"
 require "phenomenal_rails/engine"
 require "singleton"
