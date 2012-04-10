@@ -2503,3 +2503,1035 @@ Processing by ApplicationController#home as HTML
   Rendered app/contexts/persistent_feature/test_context/views/shared/_partial1.html.haml (0.7ms)
   Rendered pages/home.html.haml within layouts/application (2.0ms)
 Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 13:37:35 +0100
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.6ms)
+  Rendered pages/home.html.haml within layouts/application (23.6ms)
+Completed 200 OK in 85ms (Views: 84.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-03-14 13:38:04 +0100
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app/contexts/persistent_feature/test_context/views/shared/_partial1.html.haml (38.7ms)
+  Rendered pages/home.html.haml within layouts/application (40.6ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 13:38:21 +0100
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 3ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-03-14 13:38:22 +0100
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app/contexts/persistent_feature/test_context/views/shared/_partial1.html.haml (0.6ms)
+  Rendered pages/home.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 13:38:22 +0100
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-03-14 13:38:23 +0100
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app/contexts/persistent_feature/test_context/views/shared/_partial1.html.haml (0.6ms)
+  Rendered pages/home.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 13:38:23 +0100
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-03-14 13:38:25 +0100
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app/contexts/persistent_feature/test_context/views/shared/_partial1.html.haml (0.6ms)
+  Rendered pages/home.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:09:13 +0200
+
+NameError (undefined local variable or method `protect_from_forgery' for ApplicationController:Class):
+  app/contexts/persistent_feature/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+  app/contexts/persistent_feature/controllers/application_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:09:32 +0200
+
+NoMethodError (undefined method `action' for ApplicationController:Class):
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:416:in `_run__1975667817403135349__call__1175489855024874705__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:09:48 +0200
+
+NoMethodError (undefined method `action' for ApplicationController:Class):
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:416:in `_run__1975667817403135349__call__1175489855024874705__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:09:49 +0200
+
+NoMethodError (undefined method `action' for ApplicationController:Class):
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:416:in `_run__1975667817403135349__call__1175489855024874705__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:09:56 +0200
+
+NoMethodError (undefined method `action' for ApplicationController:Class):
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:416:in `_run__1975667817403135349__call__1175489855024874705__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:09:57 +0200
+
+NoMethodError (undefined method `action' for ApplicationController:Class):
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:416:in `_run__1975667817403135349__call__1175489855024874705__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:09:57 +0200
+
+NoMethodError (undefined method `action' for ApplicationController:Class):
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:416:in `_run__1975667817403135349__call__1175489855024874705__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:10:04 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.6ms)
+  Rendered pages/home.html.haml within layouts/application (35.9ms)
+Completed 200 OK in 76ms (Views: 75.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:18:08 +0200
+
+NoMethodError (undefined method `action' for ApplicationController:Class):
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:416:in `_run__3978982123413638283__call__2414492342879200369__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:18:09 +0200
+
+NoMethodError (undefined method `action' for ApplicationController:Class):
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:416:in `_run__3978982123413638283__call__2414492342879200369__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:18:10 +0200
+
+NoMethodError (undefined method `action' for ApplicationController:Class):
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:416:in `_run__3978982123413638283__call__2414492342879200369__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (40.0ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:18:22 +0200
+
+NoMethodError (undefined method `action' for ApplicationController:Class):
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:416:in `_run__3465505404085626144__call__257160131316429377__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:18:24 +0200
+
+NoMethodError (undefined method `action' for ApplicationController:Class):
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:416:in `_run__3465505404085626144__call__257160131316429377__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:18:24 +0200
+
+NoMethodError (undefined method `action' for ApplicationController:Class):
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:416:in `_run__3465505404085626144__call__257160131316429377__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:18:40 +0200
+
+NoMethodError (undefined method `action' for ApplicationController:Class):
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:416:in `_run__3465505404085626144__call__257160131316429377__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:18:47 +0200
+
+NoMethodError (undefined method `action' for ApplicationController:Class):
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:416:in `_run__2453231412113797767__call__773860397763116221__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.9ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:19:10 +0200
+
+NoMethodError (undefined method `action' for ApplicationController:Class):
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:416:in `_run__2851796461914496376__call__779184518588914205__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.2ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:19:44 +0200
+
+NoMethodError (undefined method `action' for ApplicationController:Class):
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:416:in `_run__4147293510533883238__call__32720106092309674__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:20:14 +0200
+
+NoMethodError (undefined method `action' for ApplicationController:Class):
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:30:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:416:in `_run__3669588110457475668__call__2275047816008717975__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.2ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:20:37 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.6ms)
+  Rendered pages/home.html.haml within layouts/application (11.3ms)
+Completed 200 OK in 35ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:21:02 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:21:05 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:21:11 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 11:26:54 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms)

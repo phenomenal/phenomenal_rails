@@ -16,6 +16,12 @@ module PhenomenalRails
         if entry!="." && entry !=".."
           filepath=File.join(path,entry)
           if File.file?(filepath) && entry.match(/.*\.rb/)
+            if !Rails.configuration.cache_classes && 
+              (path.match(/.*\/controllers/) || 
+              path.match(/.*\/models/) || 
+              path.match(/.*\/helpers/))
+                entry.gsub(/.rb/,"").camelize.constantize
+            end
             load filepath 
           elsif File.directory?(filepath)
             load_dir(filepath)
