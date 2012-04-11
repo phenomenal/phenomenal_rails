@@ -2,6 +2,7 @@ require "phenomenal"
 require "phenomenal_rails/context"
 require "phenomenal_rails/feature"
 require "phenomenal_rails/middleware"
+#require "phenomenal_rails/rendering"
 require "phenomenal_rails/engine"
 require "singleton"
 require "phenomenal_rails/resolver"
@@ -20,7 +21,10 @@ module PhenomenalRails
               (path.match(/.*\/controllers/) || 
               path.match(/.*\/models/) || 
               path.match(/.*\/helpers/))
+              begin
                 entry.gsub(/.rb/,"").camelize.constantize
+              rescue
+              end
             end
             load filepath 
           elsif File.directory?(filepath)

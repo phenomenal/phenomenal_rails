@@ -2,7 +2,10 @@ class Phenomenal::Resolver < ActionView::FileSystemResolver
   include Singleton
   
   def find_all(name, prefix=nil, partial=false, details={}, key=nil, locals=[])
-    contexts = find_sorted_active_contexts
+     find_all_contexts(name,find_sorted_active_contexts, prefix, partial, details, key, locals)
+  end
+  
+  def find_all_contexts(name,contexts, prefix=nil, partial=false, details={}, key=nil, locals=[])
     contexts.each do |context|
       context_path = context.to_path
       if !context_path.nil?
