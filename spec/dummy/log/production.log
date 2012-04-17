@@ -1133,3 +1133,216 @@ Processing by ApplicationController#home as HTML
   Rendered app/contexts/persistent_feature/test_context/views/shared/_partial1.html.haml (0.1ms)
   Rendered pages/home.html.haml within layouts/application (2.0ms)
 Completed 200 OK in 5ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-17 16:49:53 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered shared/_partial1.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (Missing partial shared/partial2 with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :haml]}. Searched in:
+  * "/home/thibault/RoRworkspace/phenomenal_rails/spec/dummy/phenomenal"
+  * "/home/thibault/RoRworkspace/phenomenal_rails/spec/dummy/app/views"
+  * "/home/thibault/RoRworkspace/phenomenal_rails/app/views"
+):
+    21: %br
+    22: =render "shared/partial1"
+    23: %br
+    24: =render "shared/partial2"
+    25: %br
+    26: %br
+    27: 
+  app/views/pages/home.html.haml:24:in `_app_views_pages_home_html_haml___3476481925329455204_21324400'
+  app/controllers/application_controller.rb:6:in `home'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-17 16:49:57 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (Missing partial shared/partial2 with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :haml]}. Searched in:
+  * "/home/thibault/RoRworkspace/phenomenal_rails/spec/dummy/phenomenal"
+  * "/home/thibault/RoRworkspace/phenomenal_rails/spec/dummy/app/views"
+  * "/home/thibault/RoRworkspace/phenomenal_rails/app/views"
+):
+    21: %br
+    22: =render "shared/partial1"
+    23: %br
+    24: =render "shared/partial2"
+    25: %br
+    26: %br
+    27: 
+  app/views/pages/home.html.haml:24:in `_app_views_pages_home_html_haml___3476481925329455204_21324400'
+  app/controllers/application_controller.rb:6:in `home'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.3ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-17 16:51:46 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered shared/_partial1.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (Missing partial shared/partial2 with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :haml]}. Searched in:
+  * "/home/thibault/RoRworkspace/phenomenal_rails/spec/dummy/phenomenal"
+  * "/home/thibault/RoRworkspace/phenomenal_rails/spec/dummy/app/views"
+  * "/home/thibault/RoRworkspace/phenomenal_rails/app/views"
+):
+    21: %br
+    22: =render "shared/partial1"
+    23: %br
+    24: =render "shared/partial2"
+    25: %br
+    26: %br
+    27: 
+  app/views/pages/home.html.haml:24:in `_app_views_pages_home_html_haml__4281775607708514417_19805240'
+  app/controllers/application_controller.rb:6:in `home'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-17 16:51:50 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (Missing partial shared/partial2 with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :haml]}. Searched in:
+  * "/home/thibault/RoRworkspace/phenomenal_rails/spec/dummy/phenomenal"
+  * "/home/thibault/RoRworkspace/phenomenal_rails/spec/dummy/app/views"
+  * "/home/thibault/RoRworkspace/phenomenal_rails/app/views"
+):
+    21: %br
+    22: =render "shared/partial1"
+    23: %br
+    24: =render "shared/partial2"
+    25: %br
+    26: %br
+    27: 
+  app/views/pages/home.html.haml:24:in `_app_views_pages_home_html_haml__4281775607708514417_19805240'
+  app/controllers/application_controller.rb:6:in `home'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.3ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-17 16:52:55 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.7ms)
+  Rendered text template (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (54.3ms)
+Completed 200 OK in 79ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-17 16:52:57 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.6ms)
+  Rendered phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-17 16:52:58 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-17 16:52:59 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.0ms)
+  Rendered phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-17 16:53:02 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-17 16:53:03 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.0ms)
+  Rendered phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-17 16:53:04 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-17 16:53:05 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.0ms)
+  Rendered phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-17 16:53:05 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-17 16:53:06 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.0ms)
+  Rendered phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-17 16:53:12 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-17 16:53:20 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.0ms)
+  Rendered phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)

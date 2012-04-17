@@ -1,8 +1,29 @@
-class Phenomenal::Resolver < ActionView::FileSystemResolver
+class Phenomenal::Resolver < ActionView::OptimizedFileSystemResolver
   include Singleton
   
   def find_all(name, prefix=nil, partial=false, details={}, key=nil, locals=[])
-     find_all_contexts(name,find_sorted_active_contexts, prefix, partial, details, key, locals)
+    contexts = phen_defined_contexts.find_all{|c| c.active?}
+    contexts.sort!{|a,b| Phenomenal::Manager.instance.conflict_policy(a,b)}
+    find_all_contexts(name,contexts, prefix, partial, details, key, locals)
+  end
+  
+  def find_all_inactive(name, prefix=nil, partial=false, details={}, key=nil, locals=[])
+    contexts = phen_defined_contexts.find_all{|c| !c.active?}
+    find_all_contexts(name,contexts, prefix, partial, details, key, locals)
+  end
+  
+  private
+  def initialize()
+    super("phenomenal")
+    @cached={}
+  end
+  
+  def cached(template, path, formats)
+    if caching?
+      @cached[template]||=yield
+    else
+      yield
+    end 
   end
   
   def find_all_contexts(name,contexts, prefix=nil, partial=false, details={}, key=nil, locals=[])
@@ -38,24 +59,5 @@ class Phenomenal::Resolver < ActionView::FileSystemResolver
           :updated_at   => mtime(template))
       end
     }
-  end
-  
-  private
-  def initialize()
-    super("app/contexts")
-    @cached={}
-  end
-  
-  def cached(template, path, formats)
-    if caching?
-      @cached[template]||=yield
-    else
-      yield
-    end 
-  end
-  
-  def find_sorted_active_contexts
-    contexts = phen_defined_contexts.find_all{|c| c.active?}
-    contexts.sort!{|a,b| Phenomenal::Manager.instance.conflict_policy(a,b)}
   end
 end

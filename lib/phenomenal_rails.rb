@@ -2,10 +2,10 @@ require "phenomenal"
 require "phenomenal_rails/context"
 require "phenomenal_rails/feature"
 require "phenomenal_rails/middleware"
-#require "phenomenal_rails/rendering"
 require "phenomenal_rails/engine"
 require "singleton"
 require "phenomenal_rails/resolver"
+require "phenomenal_rails/path_set"
 
 # Set default context as persistent
 phen_default_context.persistent=true
@@ -48,7 +48,7 @@ module PhenomenalRails
       end
     end
     if !Rails.configuration.cache_classes
-      PhenomenalRails.load_dir("#{Rails.root}/app/contexts")
+      PhenomenalRails.load_dir("#{Rails.root}/phenomenal")
     end
   end
 end

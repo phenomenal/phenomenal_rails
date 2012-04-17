@@ -4,6 +4,7 @@ module PhenomenalRails
     config.app_middleware.use(PhenomenalRails::Middleware)
     config.after_initialize do
       ActionController::Base.prepend_view_path(Phenomenal::Resolver.instance)
+      PhenomenalRails.load_dir("#{Rails.root}/phenomenal")
     end
   end
 end

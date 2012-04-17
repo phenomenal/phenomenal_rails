@@ -1,6 +1,6 @@
 class ApplicationController
   def home
-    @test_title = "Overrideddffd controller"
+    @test_title = "Overrided controller"
     render "pages/home"
   end
 end

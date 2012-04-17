@@ -3,7 +3,7 @@ feature :PersistentFeature do
     adaptations_for ApplicationHelper
   
     adapt :test do 
-      "adapted helper"
+      "Adapted helper"
     end
   end
 end
