@@ -7,10 +7,10 @@ module PhenomenalRails
       ActionController::Base.prepend_view_path(PhenomenalRails::Resolver.instance)
     end
     ActionDispatch::Callbacks.before do |*args|
-      PhenomenalRails.prepare
+      PhenomenalRails::Loader.prepare
     end
     config.to_prepare do
-      PhenomenalRails.prepare(true)
+      PhenomenalRails::Loader.prepare(true)
     end
   end
 end
