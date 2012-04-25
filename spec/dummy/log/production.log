@@ -1515,3 +1515,919 @@ Processing by ApplicationController#home as HTML
   Rendered app_phenomenal/test_feature/views/shared/_partial4.html.haml (0.0ms)
   Rendered pages/home.html.haml within layouts/application (30.0ms)
 Completed 200 OK in 33ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 17:59:35 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.6ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.5ms)
+  Rendered shared/_partial4.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (19.3ms)
+Completed 200 OK in 84ms (Views: 83.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 17:59:37 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 17:59:38 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.7ms)
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.5ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered app_phenomenal/test_feature/views/shared/_partial4.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 17:59:39 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 19:54:30 +0200
+
+ActionController::RoutingError (uninitialized constant ApplicationController):
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `constantize'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:416:in `_run__3652347236544198012__call__3573878789997270036__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:00:46 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.5ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.4ms)
+  Rendered shared/_partial4.html.haml (0.4ms)
+  Rendered pages/home.html.haml within layouts/application (18.3ms)
+Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:06:42 +0200
+
+ActionController::RoutingError (uninitialized constant ApplicationController):
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `constantize'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:416:in `_run__3065703558316655396__call__3607450575860508338__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:08:51 +0200
+
+ActionController::RoutingError (uninitialized constant ApplicationController):
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `constantize'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:416:in `_run__4003327478569645416__call__2917513385147339809__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:08:52 +0200
+
+ActionController::RoutingError (uninitialized constant ApplicationController):
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `constantize'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:416:in `_run__4003327478569645416__call__2917513385147339809__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:13:48 +0200
+
+ActionController::RoutingError (uninitialized constant ApplicationController):
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `constantize'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:416:in `_run__3694741741635635944__call__1287777328882691153__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:13:51 +0200
+
+ActionController::RoutingError (uninitialized constant ApplicationController):
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `constantize'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:416:in `_run__3694741741635635944__call__1287777328882691153__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:14:58 +0200
+
+ActionController::RoutingError (uninitialized constant ApplicationController):
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `constantize'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:416:in `_run__3466992673041913651__call__3931671938032514863__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:15:01 +0200
+
+ActionController::RoutingError (uninitialized constant ApplicationController):
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `constantize'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:416:in `_run__3466992673041913651__call__3931671938032514863__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:15:34 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.5ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.5ms)
+  Rendered shared/_partial4.html.haml (0.4ms)
+  Rendered pages/home.html.haml within layouts/application (19.1ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:15:36 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:15:37 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.1ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.1ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:15:39 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 20:15:39 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.6ms)
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.4ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered app_phenomenal/test_feature/views/shared/_partial4.html.haml (0.4ms)
+  Rendered pages/home.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:15:40 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 20:15:40 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered app_phenomenal/test_feature/views/shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:15:41 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 20:15:41 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered app_phenomenal/test_feature/views/shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:15:42 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 20:15:42 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered app_phenomenal/test_feature/views/shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:15:43 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 20:15:43 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered app_phenomenal/test_feature/views/shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 20:15:44 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered app_phenomenal/test_feature/views/shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:15:44 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 20:15:45 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered app_phenomenal/test_feature/views/shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:15:45 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 20:15:45 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered app_phenomenal/test_feature/views/shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:15:46 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 20:15:46 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered app_phenomenal/test_feature/views/shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:15:46 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:15:47 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:31:26 +0200
+
+ActionController::RoutingError (uninitialized constant ApplicationController):
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.3) lib/active_support/inflector/methods.rb:228:in `constantize'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  /home/thibault/RoRworkspace/phenomenal_rails/lib/phenomenal_rails/middleware.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:416:in `_run__678952384032550621__call__3798343250234959235__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.2/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.2/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:36:58 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.6ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.5ms)
+  Rendered shared/_partial4.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (19.5ms)
+Completed 200 OK in 44ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:37:00 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 20:37:01 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.6ms)
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.4ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered app_phenomenal/test_feature/views/shared/_partial4.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 20:39:20 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.6ms)
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.4ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.4ms)
+  Rendered app_phenomenal/test_feature/views/shared/_partial4.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (14.2ms)
+Completed 200 OK in 39ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 20:39:21 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered app_phenomenal/test_feature/views/shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:39:22 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.6ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered shared/_partial4.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 11ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 20:39:23 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered app_phenomenal/test_feature/views/shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 5ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:39:23 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 20:39:24 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered app_phenomenal/test_feature/views/shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:39:24 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app_phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.0ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
