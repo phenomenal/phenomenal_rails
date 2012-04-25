@@ -1,4 +1,4 @@
-#ActionView::LookupContext.register_detail(:feature)  {[false]} -> add the details to the options hash
+ActionView::LookupContext.register_detail(:feature)  {[]} #-> add the details to the options hash
 module ActionView
   class PathSet
     def find(*args)

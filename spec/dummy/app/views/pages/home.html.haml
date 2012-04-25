@@ -19,10 +19,11 @@
         %td=context.active?
 
 %br
-=render "shared/partial1"
+=render :partial=>"shared/partial1"
 %br
 =render "shared/partial2"
 %br
+=render :partial=>"shared/partial3",:feature=>[:PersistentFeature]
 %br
 
 = ActionController::Base.view_paths.paths
