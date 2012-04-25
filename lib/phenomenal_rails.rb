@@ -12,7 +12,7 @@ phen_default_context.persistent=true
 
 module PhenomenalRails
   def self.load_dir(path)
-    puts "LOOAADDD #{path}"
+    
     if Dir.exist? path
       Dir.entries(path).each do |entry|
         if entry!="." && entry !=".."
@@ -27,7 +27,7 @@ module PhenomenalRails
     end
   end
   
-  ActionDispatch::Callbacks.before do
+  def self.prepare(loading=false)
     phen_defined_contexts.reverse.each do |context|
       if !context.forgotten && (!context.persistent || !Rails.configuration.cache_classes)
         while phen_context_active?(context) do
@@ -39,9 +39,9 @@ module PhenomenalRails
         end
       end
     end
-    if !Rails.configuration.cache_classes
-      puts "BEFORE LOADING ================================"
+    if !Rails.configuration.cache_classes || loading
       PhenomenalRails.load_dir("#{Rails.root}/#{PhenomenalRails::PATH}")
     end
   end
+
 end
