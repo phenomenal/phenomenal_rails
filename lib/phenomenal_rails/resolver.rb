@@ -1,8 +1,7 @@
-class Phenomenal::Resolver < ActionView::OptimizedFileSystemResolver
+class PhenomenalRails::Resolver < ActionView::OptimizedFileSystemResolver
   include Singleton
   
   def find_all(name, prefix=nil, partial=false, details={}, key=nil, locals=[])
-    puts details
     contexts = phen_defined_contexts.find_all do |c| 
       c.active? && 
       (details[:feature].empty? ? true : c==feature(*details[:feature]))
@@ -21,7 +20,7 @@ class Phenomenal::Resolver < ActionView::OptimizedFileSystemResolver
   
   private
   def initialize()
-    super("phenomenal")
+    super(PhenomenalRails::PATH)
     @cached={}
   end
   

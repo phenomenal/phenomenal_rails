@@ -17,7 +17,7 @@ module PhenomenalRails
         if entry!="." && entry !=".."
           filepath=File.join(path,entry)
           if File.file?(filepath) && entry.match(/.*\.rb/)
-            if !Rails.configuration.cache_classes && 
+            if !Rails.configuration.cache_classes && # Force loading of base class in case of reopening
               (path.match(/.*\/controllers/) || 
               path.match(/.*\/models/) || 
               path.match(/.*\/helpers/))
@@ -48,7 +48,7 @@ module PhenomenalRails
       end
     end
     if !Rails.configuration.cache_classes
-      PhenomenalRails.load_dir("#{Rails.root}/phenomenal")
+      PhenomenalRails.load_dir("#{Rails.root}/#{PhenomenalRails::PATH}")
     end
   end
 end

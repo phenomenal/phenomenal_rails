@@ -18,7 +18,7 @@ module ActionView
     def find_all_inactive(path, prefixes = [], *args)
       prefixes = [prefixes] if String === prefixes
       prefixes.each do |prefix|
-        templates = paths.find{|p| p.is_a?Phenomenal::Resolver}.find_all_inactive(path, prefix, *args)
+        templates = paths.find{|p| p.is_a?PhenomenalRails::Resolver}.find_all_inactive(path, prefix, *args)
         return templates unless templates.empty?
       end
       []
