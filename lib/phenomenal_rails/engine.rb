@@ -7,7 +7,7 @@ module PhenomenalRails
       ActionController::Base.prepend_view_path(PhenomenalRails::Resolver.instance)
     end
     config.to_prepare do
-      PhenomenalRails.load_dir("#{Rails.root}/#{PATH}")
+      PhenomenalRails.load_dir("#{Rails.root}/#{PATH}") if Rails.env.development?
     end
   end
 end

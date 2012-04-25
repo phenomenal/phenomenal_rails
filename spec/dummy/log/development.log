@@ -7909,3 +7909,114 @@ Processing by ApplicationController#home as HTML
   Rendered shared/_partial4.html.haml (0.0ms)
   Rendered pages/home.html.haml within layouts/application (4.2ms)
 Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 14:06:05 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.8ms)
+  Rendered pages/home.html.haml within layouts/application (16.8ms)
+Completed 500 Internal Server Error in 65ms
+
+ActionView::Template::Error (Missing partial shared/partial2 with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :haml], :feature=>[]}. Searched in:
+  * "/home/thibault/RoRworkspace/phenomenal_rails/spec/dummy/app/phenomenal"
+  * "/home/thibault/RoRworkspace/phenomenal_rails/spec/dummy/app/views"
+  * "/home/thibault/RoRworkspace/phenomenal_rails/app/views"
+):
+    21: %br
+    22: =render :partial=>"shared/partial1"
+    23: %br
+    24: =render "shared/partial2"
+    25: %br
+    26: =render :partial=>"shared/partial3",:feature=>[:PersistentFeature]
+    27: %br
+  app/views/pages/home.html.haml:24:in `_app_views_pages_home_html_haml___422694045972397231_23258340'
+  app/phenomenal/persistent_feature/controllers/application_controller.rb:4:in `home'
+
+
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/1.9.2/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 14:07:55 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.5ms)
+  Rendered text template (0.0ms)
+  Rendered app/phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.5ms)
+  Rendered shared/_partial4.html.haml (0.4ms)
+  Rendered pages/home.html.haml within layouts/application (18.5ms)
+Completed 200 OK in 41ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 14:12:14 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.5ms)
+  Rendered text template (0.0ms)
+  Rendered app/phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.5ms)
+  Rendered shared/_partial4.html.haml (0.4ms)
+  Rendered pages/home.html.haml within layouts/application (19.0ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 14:12:59 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.6ms)
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.5ms)
+  Rendered app/phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.5ms)
+  Rendered app/phenomenal/test_feature/views/shared/_partial4.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 14:26:42 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.5ms)
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.4ms)
+  Rendered app/phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.5ms)
+  Rendered app/phenomenal/test_feature/views/shared/_partial4.html.haml (0.4ms)
+  Rendered pages/home.html.haml within layouts/application (14.0ms)
+Completed 200 OK in 39ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 14:26:43 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.7ms)
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.5ms)
+  Rendered app/phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.4ms)
+  Rendered app/phenomenal/test_feature/views/shared/_partial4.html.haml (0.4ms)
+  Rendered pages/home.html.haml within layouts/application (46.0ms)
+Completed 200 OK in 49ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 14:26:44 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.6ms)
+  Rendered text template (0.0ms)
+  Rendered app/phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.5ms)
+  Rendered shared/_partial4.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 14:26:45 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.6ms)
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.5ms)
+  Rendered app/phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.5ms)
+  Rendered app/phenomenal/test_feature/views/shared/_partial4.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 8ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 14:26:46 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app/phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.5ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)

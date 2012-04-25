@@ -12,20 +12,12 @@ phen_default_context.persistent=true
 
 module PhenomenalRails
   def self.load_dir(path)
+    puts "LOOAADDD #{path}"
     if Dir.exist? path
       Dir.entries(path).each do |entry|
         if entry!="." && entry !=".."
           filepath=File.join(path,entry)
           if File.file?(filepath) && entry.match(/.*\.rb/)
-            if !Rails.configuration.cache_classes && # Force loading of base class in case of reopening
-              (path.match(/.*\/controllers/) || 
-              path.match(/.*\/models/) || 
-              path.match(/.*\/helpers/))
-              begin
-                entry.gsub(/.rb/,"").camelize.constantize
-              rescue
-              end
-            end
             load filepath 
           elsif File.directory?(filepath)
             load_dir(filepath)
@@ -48,6 +40,7 @@ module PhenomenalRails
       end
     end
     if !Rails.configuration.cache_classes
+      puts "BEFORE LOADING ================================"
       PhenomenalRails.load_dir("#{Rails.root}/#{PhenomenalRails::PATH}")
     end
   end
