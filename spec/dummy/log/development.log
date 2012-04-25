@@ -7824,3 +7824,88 @@ Processing by ApplicationController#home as HTML
   Rendered app/phenomenal/test_feature/views/shared/_partial4.html.haml (0.4ms)
   Rendered pages/home.html.haml within layouts/application (5.0ms)
 Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 13:57:56 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.7ms)
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.5ms)
+  Rendered app/phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.5ms)
+  Rendered app/phenomenal/test_feature/views/shared/_partial4.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (14.9ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 13:57:58 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.7ms)
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.5ms)
+  Rendered app/phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.5ms)
+  Rendered app/phenomenal/test_feature/views/shared/_partial4.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 16ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 13:58:02 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.6ms)
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.4ms)
+  Rendered app/phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.4ms)
+  Rendered app/phenomenal/test_feature/views/shared/_partial4.html.haml (0.4ms)
+  Rendered pages/home.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 13:58:04 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.6ms)
+  Rendered text template (0.0ms)
+  Rendered app/phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.5ms)
+  Rendered shared/_partial4.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 11ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 13:58:06 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.6ms)
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.5ms)
+  Rendered app/phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.5ms)
+  Rendered app/phenomenal/test_feature/views/shared/_partial4.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 13:58:07 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app/phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.6ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?activated=true" for 127.0.0.1 at 2012-04-25 13:58:08 +0200
+Processing by ApplicationController#home as HTML
+  Parameters: {"activated"=>"true"}
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial1.html.haml (0.6ms)
+  Rendered app/phenomenal/persistent_feature/test_context/views/shared/_partial2.html.haml (0.5ms)
+  Rendered app/phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.5ms)
+  Rendered app/phenomenal/test_feature/views/shared/_partial4.html.haml (0.5ms)
+  Rendered pages/home.html.haml within layouts/application (5.6ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 13:58:09 +0200
+Processing by ApplicationController#home as HTML
+  Rendered shared/_partial1.html.haml (0.0ms)
+  Rendered text template (0.0ms)
+  Rendered app/phenomenal/persistent_feature/views/shared/_partial3.html.haml (0.6ms)
+  Rendered shared/_partial4.html.haml (0.0ms)
+  Rendered pages/home.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)

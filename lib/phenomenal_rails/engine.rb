@@ -6,6 +6,9 @@ module PhenomenalRails
     config.after_initialize do
       ActionController::Base.prepend_view_path(PhenomenalRails::Resolver.instance)
     end
+    config.to_prepare do
+      PhenomenalRails.load_dir("#{Rails.root}/#{PATH}")
+    end
   end
 end
 
