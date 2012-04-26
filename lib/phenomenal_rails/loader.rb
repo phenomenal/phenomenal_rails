@@ -5,8 +5,7 @@ class PhenomenalRails::Loader
       if File.directory?(filepath)
         if (filepath.match(/.*\/controllers/) ||
           filepath.match(/.*\/models/) ||
-          filepath.match(/.*\/helpers/))
-          puts "Autoload #{filepath}"        
+          filepath.match(/.*\/helpers/))      
           paths.push(filepath)
         end
         autoload_paths(filepath,paths)        
@@ -29,7 +28,6 @@ class PhenomenalRails::Loader
   def self.load_files(path)
     self.scan_dir(path) do |filepath, entry|
       if File.file?(filepath) && entry.match(/.*\.rb/)
-        puts "Load #{filepath}"
         load filepath
       elsif File.directory?(filepath)
         if !(filepath.match(/.*\/controllers/) ||
@@ -40,13 +38,13 @@ class PhenomenalRails::Loader
       end
     end
   end
+  
   def self.prepare(loading=false)
     phen_defined_contexts.reverse.each do |context|
       if !context.forgotten && (!context.persistent || !Rails.configuration.cache_classes)
         while phen_context_active?(context) do
           phen_deactivate_context(context) 
         end
-        # Fix problem without page caching
         if !Rails.configuration.cache_classes
           phen_forget_context(context)
         end
