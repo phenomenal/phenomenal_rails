@@ -8,7 +8,7 @@ require "singleton"
 require "phenomenal_rails/resolver"
 require "phenomenal_rails/path_set"
 
-# Set default context as persistent
-phen_default_context.persistent=true
+# Set default feature as persistent
+phen_default_feature.persistent=true
 
 module PhenomenalRails end
