@@ -1,7 +1,7 @@
 class PhenomenalRails::Loader
   class << self
     def autoload_paths(path,paths=[])
-      self.scan_dir(path) do |filepath, entry|
+      scan_dir(path) do |filepath, entry|
         if File.directory?(filepath)
           if (filepath.match(/.*\/controllers/) ||
             filepath.match(/.*\/models/) ||
@@ -12,31 +12,6 @@ class PhenomenalRails::Loader
         end
       end
       paths
-    end
-    
-    def scan_dir(path, &block)
-      if Dir.exist? path
-        Dir.entries(path).each do |entry|
-          if entry!="." && entry !=".."
-            filepath=File.join(path,entry)
-            yield(filepath, entry)
-          end
-        end
-      end
-    end
-   
-    def load_files(path)
-      self.scan_dir(path) do |filepath, entry|
-        if File.file?(filepath) && entry.match(/.*\.rb/)
-          load filepath
-        elsif File.directory?(filepath)
-          if !(filepath.match(/.*\/controllers/) ||
-            filepath.match(/.*\/models/) ||
-            filepath.match(/.*\/helpers/))
-            load_files(filepath)
-          end
-        end
-      end
     end
     
     def prepare(loading=false)
@@ -52,7 +27,33 @@ class PhenomenalRails::Loader
       end
 
       if !Rails.configuration.cache_classes || loading
-        PhenomenalRails::Loader.load_files(File.expand_path(PhenomenalRails::PATH,Rails.root))
+        load_files(File.expand_path(PhenomenalRails::PATH,Rails.root))
+      end
+    end
+    
+    private 
+    def scan_dir(path, &block)
+      if Dir.exist? path
+        Dir.entries(path).each do |entry|
+          if entry!="." && entry !=".."
+            filepath=File.join(path,entry)
+            yield(filepath, entry)
+          end
+        end
+      end
+    end
+   
+    def load_files(path)
+      scan_dir(path) do |filepath, entry|
+        if File.file?(filepath) && entry.match(/.*\.rb/)
+          load filepath
+        elsif File.directory?(filepath)
+          if !(filepath.match(/.*\/controllers/) ||
+            filepath.match(/.*\/models/) ||
+            filepath.match(/.*\/helpers/))
+            load_files(filepath)
+          end
+        end
       end
     end
   end
