@@ -1,3 +1,4 @@
+
 require "phenomenal"
 require "phenomenal_rails/loader"
 require "phenomenal_rails/context"
@@ -11,4 +12,8 @@ require "phenomenal_rails/path_set"
 # Set default feature as persistent
 phen_default_feature.persistent=true
 
-module PhenomenalRails end
+
+module PhenomenalRails 
+  # Phenomenal application folder
+  PATH = "app_phenomenal"
+end
