@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.name        = "phenomenal_rails"
   s.version     = PhenomenalRails::VERSION
   s.authors = "Loic Vigneron - Thibault Poncelet"
-  s.email = "thibault.poncelet@student.uclouvain.be - loic.vigneron@student.uclouvain.be"
+  s.email = "team@phenomenal-gem.com"
   s.homepage    = "http://www.phenomenal-gem.com"
   s.summary     = "Rails glue for phenomenal"
   s.description = "Rails integration of phenomenal"

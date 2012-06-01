@@ -6,6 +6,7 @@ class Phenomenal::Context
   def is_persistent
     @persistent  = true
     activate
+    nil
   end
   
   def to_path

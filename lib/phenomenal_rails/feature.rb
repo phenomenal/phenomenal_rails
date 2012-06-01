@@ -5,5 +5,6 @@ class Phenomenal::Feature
   
   def activation_condition(&block)
     @@middleware.add_condition(self,&block)
+    nil
   end
 end
