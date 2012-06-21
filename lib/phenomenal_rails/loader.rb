@@ -27,6 +27,7 @@ class PhenomenalRails::Loader
       end
 
       if !Rails.configuration.cache_classes || loading
+        Phenomenal::Feature.middleware.clear_activition_conditions
         load_files(File.expand_path(PhenomenalRails::PATH,Rails.root))
       end
     end
