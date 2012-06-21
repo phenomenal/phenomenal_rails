@@ -1,4 +1,4 @@
-%h1 
+%h1
   HOME
   =@test_title
 %p
@@ -28,5 +28,11 @@
 =render :partial=>"shared/partial4"
 = ActionController::Base.view_paths.paths
 %br
+%p
+  Activation conditions stack
+  %br
+  =Phenomenal::Feature.class_variable_get(:@@middleware).instance_variable_get(:@activation_conditions)
 %br
+%br
+
 =Rails.env

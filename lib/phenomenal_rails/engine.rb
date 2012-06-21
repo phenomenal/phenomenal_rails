@@ -12,7 +12,6 @@ class PhenomenalRails::Engine < Rails::Engine
 
   config.after_initialize do
     ActionController::Base.prepend_view_path(PhenomenalRails::Resolver.instance)
-    Phenomenal::Feature.middleware.sort_activation_conditions
   end
 
   ActionDispatch::Callbacks.before do |*args|

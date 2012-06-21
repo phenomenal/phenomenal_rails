@@ -1,13 +1,13 @@
 GIT
   remote: git://github.com/phenomenal/phenomenal.git
-  revision: 0e9f6f4cb19ab8eb42924ef8996ec941501c440e
+  revision: 765e8f80bbca83351ae4310f752f407c375f1162
   specs:
-    phenomenal (1.2.2)
+    phenomenal (1.2.3)
 
 PATH
   remote: .
   specs:
-    phenomenal_rails (1.2.3)
+    phenomenal_rails (1.2.4)
       phenomenal (~> 1.2.0)
       rails (>= 3.1.0)
 
@@ -57,7 +57,7 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mime-types (1.18)
+    mime-types (1.19)
     multi_json (1.3.6)
     polyglot (0.3.3)
     rack (1.4.1)
