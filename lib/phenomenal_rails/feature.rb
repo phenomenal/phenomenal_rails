@@ -3,8 +3,12 @@ class Phenomenal::Feature
     @@middleware=middleware
   end
   
+  def self.middleware
+    @@middleware
+  end
+  
   def activation_condition(&block)
-    @@middleware.add_condition(self,&block)
+    Phenomenal::Feature.middleware.add_condition(self,&block)
     nil
   end
 end
