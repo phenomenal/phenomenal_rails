@@ -6,10 +6,8 @@ class PhenomenalRails::Middleware
   end
 
   def add_condition(feature,&block)
-    puts "pppp"
     @activation_conditions.push([feature,block])
     sort_activation_conditions
-    puts @activation_conditions
   end
 
   def clear_activition_conditions
@@ -32,8 +30,8 @@ class PhenomenalRails::Middleware
 
   private
   def sort_activation_conditions
-    @activation_conditions= @activation_conditions.sort do |a,b|
-      Phenomenal::Manager.instance.conflict_policy(b[0],a[0])
+    @activation_conditions.sort! do |a,b|
+      Phenomenal::Manager.instance.conflict_policy(a[0],b[0])
     end
-  end
+  end 
 end

@@ -1,6 +1,7 @@
 feature :TestFeature do
-  priority=2
+  set_priority 2
   activation_condition do
     # empty
   end
 end
+
